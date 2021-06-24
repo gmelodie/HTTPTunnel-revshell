@@ -26,3 +26,6 @@ Attacker:4444 <--> Attacker:4445 <--HTTPTunnel--> Target:4444
 ```
 
 5. (Optional) [Upgrade your shell to an interactive shell](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/).
+
+## Common Issues
+- `nc: invalid option -- 'e'`: The netcat installed on the target probably doesn't have the `-e` functionality, try changing the `nc` line to [some other alternative](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#netcat-traditional) or [using `ncat` instead](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#ncat)
